@@ -2,7 +2,7 @@ import { FC } from "react";
 import styles from "./Expressing.module.css";
 
 export const Expressing: FC = () => (
-  <section className="section white_section" id={styles.expressing}>
+  <section className="section white_section" id="expressing">
     <h2>Expressing a brand that understands its customers</h2>
     <p>
       The bespoke artwork features iconic South Australian landmarks to
