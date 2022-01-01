@@ -1,0 +1,30 @@
+#table {
+  background: var(--white-color);
+  color: var(--dark-grey-color);
+  display: grid;
+}
+
+#table img {
+  width: 100%;
+}
+
+#table p {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  #table {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "text img";
+    align-items: center;
+    justify-items: center;
+  }
+
+  #table img {
+    grid-area: img;
+  }
+
+  #table p {
+    grid-area: text;
+  }
+}
