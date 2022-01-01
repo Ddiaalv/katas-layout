@@ -1,0 +1,53 @@
+#team {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.team_wave_deco {
+  width: 100%;
+  max-height: 200px;
+}
+
+#team_img {
+  max-height: 400px;
+  z-index: 2;
+}
+
+#team::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  padding-bottom: 5%;
+  background: url("/public/img/onia-header-curve.svg") bottom left repeat-x;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  #team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "wave wave"
+      "con img";
+    align-items: center;
+  }
+
+  #team div:nth-of-type(1) {
+    grid-area: con;
+    align-self: end;
+  }
+
+  .team_wave_deco {
+    grid-area: wave;
+  }
+
+  #team_img {
+    grid-area: img;
+    max-height: 500px;
+  }
+}

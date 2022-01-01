@@ -1,5 +1,5 @@
 #table {
-  background: var(--white-color);
+  background: #fafafa;
   color: var(--dark-grey-color);
   display: grid;
 }
