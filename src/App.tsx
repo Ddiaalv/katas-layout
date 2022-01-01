@@ -1,5 +1,6 @@
 import "./App.css";
 import { Description } from "./components/Description/Description";
+import { Discovering } from "./components/Discovering/Discovering";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { Laptop } from "./components/Laptop/Laptop";
@@ -15,6 +16,7 @@ function App() {
         <Laptop />
         <Table />
         <Team />
+        <Discovering />
       </main>
       <Footer />
     </div>

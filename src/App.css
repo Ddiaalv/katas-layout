@@ -23,3 +23,9 @@ body {
 .section {
   padding: 2rem;
 }
+
+.white_section {
+  color: var(--dark-grey-color);
+  background: var(--white-color);
+  overflow: hidden;
+}
