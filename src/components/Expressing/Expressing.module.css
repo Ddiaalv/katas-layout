@@ -1,0 +1,21 @@
+.list_places {
+  display: grid;
+  background: var(--white-color);
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 310px));
+  justify-items: center;
+  align-items: center;
+  grid-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  #expressing .list-places {
+    display: grid;
+    background: var(--white-color);
+    justify-content: center;
+    grid-template-columns: repeat(3, 250px);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
+  }
+}
