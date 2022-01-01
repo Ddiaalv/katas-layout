@@ -1,0 +1,42 @@
+#description {
+  display: grid;
+  align-items: center;
+  align-content: center;
+}
+
+#description ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  #description {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "descri1 list"
+      "descri2 info";
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #description p {
+    justify-self: start;
+  }
+
+  #description p:nth-child(1) {
+    grid-area: descri1;
+  }
+
+  #description p:nth-child(2) {
+    grid-area: descri2;
+  }
+
+  #description ul {
+    grid-area: list;
+  }
+
+  #description div {
+    grid-area: info;
+  }
+}
