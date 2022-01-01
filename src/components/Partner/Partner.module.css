@@ -1,0 +1,12 @@
+#partner {
+  height: 100vh;
+  background: var(--dark-blue-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#partner p {
+  font-size: 1.4rem;
+}
